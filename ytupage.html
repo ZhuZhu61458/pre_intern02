@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>YTU Page</title>
+        <style>
+            .bg-header
+            {
+                background-color: red;
+                height: 5px;
+            }
+            .nav
+            {
+                background-color: grey;
+                height: 40px;
+                width: 100%;
+                /* overflow: hidden; */
+                position: relative;
+                padding: 0;
+               
+            }
+            .nav-item{
+                float: right;
+                display: flex;
+                padding: 5px;
+                padding-right: 100px;
+                
+            }
+            .nav-item a
+            {
+                color:white;
+                text-decoration: none;
+            }   
+            .logo
+            {
+                height: 30%;
+                margin-left: 150px;
+            } 
+            .navbar
+            {
+                overflow: hidden;
+                background-color: rgb(52, 58, 64);
+                font-family: Arial, Helvetica, sans-serif;
+                
+            } 
+            .nav-bar a 
+            {
+                float: left;
+                font-size: 14px;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+              }
+              .menu
+              {
+                overflow: hidden;
+                background-color: rgb(52, 58, 64);
+                
+                z-index: 1;
+                margin-top: 120px;
+                padding: 0;
+                padding-left: 120px;
+            }
+            .dropdown 
+            {
+                cursor: pointer;
+                font-size: 16px;  
+                border: none;
+                outline: none;
+                color: white;
+                float: left;
+                overflow: hidden;
+                background-color: inherit;
+                font-family: inherit;
+                margin: 0;
+                }
+            .menu a
+            {
+                
+                float: left;
+                font-size: 12px;
+                color: rgb(154, 157, 160);
+                text-decoration: none;
+                padding: 14px 16px;
+                text-align: center;
+            }
+            .menu  a:hover
+            {
+                color: whitesmoke;
+            }
+            .dropdown-content 
+            {
+                margin-top: 45px;
+                border: 0.5px solid black;
+                border-radius: 2px;
+                display: none;
+                position: absolute;
+                background-color: #f9f9f9;
+                min-width: 100px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+            }
+
+            .dropdown-content a 
+            {
+                float: none;
+                color: black;
+                padding: 6px 6px;
+                text-decoration: none;
+                display: block;
+                text-align: left;
+            }
+                
+
+            .dropdown-content a:hover 
+            {
+                background-color: rgb(248, 249, 250);
+                color: black;
+            }
+
+            .show 
+            {
+                display: block;
+            }
+
+
+    
+
+                  
+
+        </style>
+    </head>
+    <body>
+        <div class="bg-header"></div>
+        <div class="nav">
+            <div class=nav-item>
+                <a href="#" >Alumini &nbsp;&nbsp;|&nbsp;&nbsp;</a>
+                <a href="#">Library &nbsp;&nbsp;|&nbsp;&nbsp;</a> 
+                <a href="#">Sign in &nbsp;&nbsp;|&nbsp;&nbsp;</a>
+                <a href="#">Register &nbsp;&nbsp; </a>
+            </div>
+        </div>
+        <div class="logo">
+            <img src="banner.png" >
+        </div>
+        <div class="menu">
+            <a href="#"><b>HOME</b></a>
+            <div class="dropdown">
+            <a href="#" class="clicklink" onclick="myFunction()"><b>ABOUT YTU</b><img src="dropdown.png" width="12px" height="8px"></a>
+                <div class="dropdown-content" id="drop-menu1">
+                    <a href="#"><b>Rector's Message</b></a>
+                    <a href="#"><b>History</b></a>
+              </div>
+            </div>
+            <div class="dropdown">
+                <a href="#" class="clicklink" onclick="myFunction1()"><b>ADMISSION</b><img src="dropdown.png" width="12px" height="8px"> </a>
+                <div class="dropdown-content" id="drop-menu2">
+                    <a href="#"><b>Undergraduate</b></a>
+                    <a href="#"><b>Graduate</b></a>
+              </div>
+            </div>  
+            <div class="dropdown">
+                <a href="#" class="clicklink" onclick="myFunction2()"><b>DEPARTMENT</b><img src="dropdown.png" width="12px" height="8px"></a>
+                <div class="dropdown-content" id="drop-menu3">
+                <a href="#"><b>Architecture</b></a>
+                <a href="#"><b>Chemistry</b></a>
+                <a href="#"><b>Chemical Engineering</b></a>
+                <a href="#"><b>Civil Engineering</b></a>
+                <a href="#"><b>English</b></a>
+                <a href="#"><b>Computer Engineering And Information Technology</b></a>
+                <a href="#"><b>Electrical Power Engineering</b></a>
+                <a href="#"><b>Electronic Engineering</b></a>
+                <a href="#"><b>Geology</b></a>
+                <a href="#"><b>Maths</b></a>
+                <a href="#"><b>Mechanical Engineering</b></a>
+                <a href="#"><b>Mechatronic Engineering</b></a>
+                <a href="#"><b>Mining Engineering</b></a>
+                <a href="#"><b>Myanmar</b></a>
+                <a href="#"><b>Petroleum Engineering</b></a>
+                <a href="#"><b>Physics</b></a>
+                <a href="#"><b>Textile Enginnering</b></a>
+              </div>
+            </div>
+            <div class="dropdown">
+                <a href="#" class="clinklink" onclick="myFunction3()"><b>ACEDIMICS</b><img src="dropdown.png" width="12px" height="8px"></a>
+                <div class="dropdown" id="drop-menu4">
+                    <a href="#"><b>Undergratuate</b></a>
+                    <a href="#"><b>Graduate</b></a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="#" class="clickme" onclick="myFunction4()"><b>NEWS AND EVENTS</b><img src="dropdown.png" width="12px" height="8px"></a>
+                <div class="dropdown-content" id="drop-menu5">
+                    <a href="#"><b>News</b></a>
+                    <a href="#"><b>Events</b></a>
+                    <a href="#"><b>Seminars</b></a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="#" class="clickme" onclick="myFunction5()"><b>RESEARCH</b><img src="dropdown.png" width="12px" height="8px"></a>
+                <div class="dropdown-content" id="drop-menu6">
+                    <a href="#"><b>Departmental Research</b></a>
+                    <a href="#"><b>Collaborative Research</b></a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="#" class="clickme" onclick="myFunction6()"><b>CONFERENCES</b><img src="dropdown.png" width="12px" height="8px"></a>
+                <div class="dropdown-content" id="drop-menu7">
+                    <a href="#"><b>ICSE</b></a>
+                    <a href="#"><b>NCSE</b></a>
+                </div>
+            </div>
+            <a href="#"><b>INTERNATIONAL AFFAIRS</b></a>
+            <a href="#"><b>GALLERY</b></a>
+        </div>
+
+    </body>
+</html>
