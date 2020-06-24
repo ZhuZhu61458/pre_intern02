@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function change() {
+            var e = document.getElementById("colors");
+            var color = e.options[e.selectedIndex].value;
+            document.querySelector("#hello").style.color=color;
+            
+            };
+        </script>
+    </head>
+    <body>
+        <h1 id="hello">Hello! Welcome to Our Preintern Group.</h1>
+        <select id="colors" onclick="change()">
+            <option vlaue="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+            <option value="black">Black</option>
+        </select>
+    </body>
+</html>
